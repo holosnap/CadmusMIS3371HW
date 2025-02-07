@@ -1,0 +1,6 @@
+body {background-color:azure;}
+#header {text-align: center; background-color:aquamarine; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+#date {text-align: right;}
+#formstyle {text-align: center;}
+#footer{text-align: right;}
+#medicalstyle{  display: flex; justify-content: left;align-items:center;height: 0px; }
