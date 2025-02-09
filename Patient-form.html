@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <!--
 Program name: Patient-form.html
 Author: Brian Cadmus
 Date created: 2/6/2025
 Date last edited: 2/9/2025
-Version: 1.4
+Version: 1.5
 Description: A patient intake form for Houston Medical Services, made for my Transactional
 Processing Course at the University of Houston.
 -->
@@ -177,11 +178,7 @@ Processing Course at the University of Houston.
                 </ul>
                 <ul>
                     <input type="radio" id="male" name="gender"> <label for="male">Male</label>
-                </ul>
-                <ul>
                     <input type="radio" id="female" name="gender"> <label for="female">female</label>
-                </ul>
-                <ul>
                     <input type="radio" id="other" name="gender"> <label for="other">other</label>
                 </ul>
                 <br>
@@ -190,8 +187,6 @@ Processing Course at the University of Houston.
                 </uL>
                 <ul>
                     <input type="radio" id="yes" name="pacts"> <label for="yes">yes</label>
-                </ul>
-                <ul>
                     <input type="radio" id="no" name="pacts"> <label for="no">no</label>
                 </ul>
                 <br>
@@ -200,8 +195,6 @@ Processing Course at the University of Houston.
                 </ul>
                 <ul>
                     <input type="radio" id="yes" name="insurance"> <label for="yes">yes</label>
-                </ul>
-                <ul>
                     <input type="radio" id="no" name="insurance"> <label for="no">no</label>
                 </ul>
                 <br>
@@ -231,10 +224,10 @@ Processing Course at the University of Houston.
                 </ul>
                 <br>
                 <ul>
-                <a href="thank-you.html"><input type="button" value="Submit"></a>
-                <input type="button" value="reset">
-            </ul>
-            </div>  
+                    <a href="thank-you.html"><input type="button" value="Submit"></a>
+                    <input type="button" value="reset">
+                </ul>
+            </div> 
 
 
     </ul>
@@ -256,9 +249,5 @@ Processing Course at the University of Houston.
         document.getElementById("date").innerHTML = "Todays is " + dayofweek + ", " + month + " "+ currentdate + ", " + yearly;
     </script>
 </body>
-
-
-
-
 
 </html>
