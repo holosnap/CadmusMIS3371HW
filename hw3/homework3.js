@@ -108,10 +108,8 @@ function validateSsn() {
 
 function validateZcode() {
     const zipInput = document.getElementById("zcode");
-    let zip = zipInput.value.replace(/[^\d-]/g, "");
-
-
-    if (/^[A-Za-z]+$/.test(zipInput.value)) {
+    let zip = zipInput.value.replace(/[^\d-]/, "");
+    if (/^[A-Za-z]+$/.test(zipInput.value) || zipInput.value == "") {
         document.getElementById("zcode-error").innerHTML = 
         "Zip code can't be blank or contain letters";
         return false;
