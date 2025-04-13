@@ -1,0 +1,12 @@
+body {background-color:azure;}
+#header {text-align: center; background-color:aquamarine; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+#date {text-align: right;}
+#formstyle {text-align: center;}
+#patientinfo {text-align: center;}
+#footer{text-align: right;}
+#medicalstyle{  display: flex; justify-content: left;align-items:center;height: 0px; }
+.error {color: red;font-size:medium;font-family:'Courier New', Courier, monospace;font-weight:100;}
+#review {margin-top: 5px;}
+table.output,
+tr.output,
+td.output {width: 500px;background-color: green;padding: 10px;border-spacing: 2px;border-radius: 20px;color:black}
