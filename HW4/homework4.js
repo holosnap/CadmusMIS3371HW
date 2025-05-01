@@ -398,10 +398,11 @@ function cookiemonster3() {
 
 }
 
-function cookiemonster3() {
+function cookiemonster4() {
 
     if (cookiemonster2() == "") {
             document.getElementById('cookiecheck').innerHTML = "Welcome new user";
+            document.getElementById("undo-cookie").style.display = "none"
     }
         
 
