@@ -383,19 +383,12 @@ function cookiemonster1() {
     window.alert(document.cookie);
 }
 
-function cookiemonster2() {
-    var cookieName = "username=";
-    var cookies = document.cookie.split(';');
-
-    for (var i = 0; i < cookies.length; i++) {
-        var cookie = cookies[i].trim();
-        if (cookie.indexOf(cookieName) == 0) {
-            return cookie.substring(cookieName.length, cookie.length);
-        }
-    }
-    return "";
+function cookiemonster2() {;
+    var reggie = /username=([^;]*);/
+    
+    return document.cookie.match(reggie);
 }
-const cookiename = cookiemonster2
+const cookiename = cookiemonster2()
 function cookiemonster3() {
     if (cookiename !== "") {
         document.getElementById('fname').value = cookiename;
