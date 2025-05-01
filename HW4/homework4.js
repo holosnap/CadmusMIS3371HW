@@ -406,7 +406,7 @@ function cookiemonster4() {
         
 
     else {
-    document.getElementById('cookiecheck').innerHTML = "Welcome back " + coocookiemonster2();
+    document.getElementById('cookiecheck').innerHTML = "Welcome back " + cookiemonster2();
     document.getElementById("undo-cookie").style.display = "block"
 }
 }
