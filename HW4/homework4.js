@@ -391,7 +391,7 @@ function cookiemonster2() {
 }
 const cookiename = cookiemonster2()
 function cookiemonster3() {
-    if (cookiename !== "") {
+    if (cookiename !== null) {
         document.getElementById('fname').value = cookiename;
 
     }
