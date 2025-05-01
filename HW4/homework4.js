@@ -398,7 +398,7 @@ function cookiemonster3() {
 
 }
 
-function cookiemonster4() {
+function cookiemonster3() {
 
     if (cookiemonster2() == "") {
             document.getElementById('cookiecheck').innerHTML = "Welcome new user";
