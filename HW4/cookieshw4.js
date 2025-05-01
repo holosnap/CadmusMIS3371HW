@@ -10,7 +10,6 @@ function cookiemonster1() {
 function cookiemonster2() {
     var reggie = /username=([^]*)/;
     var opreggie = decodeURIComponent(document.cookie).match(reggie);
-    window.alert(opreggie[1])
     return opreggie[1];
 }
 const cookiename = cookiemonster2()
@@ -19,6 +18,9 @@ function cookiemonster3() {
     if (cookiemonster2() !== "") {
         document.getElementById('fname').value = cookiemonster2();
 
+    }
+    else {
+        document.getElementById('fname').value = "";
     }
 
 }
