@@ -385,8 +385,9 @@ function cookiemonster1() {
 
 function cookiemonster2() {
     var reggie = /username=([^;]*);/;
-    
-    return document.cookie.match(reggie);
+    var opreggie = document.cookie.match(reggie);
+    window.alert(opreggie)
+    return opreggie;
 }
 const cookiename = cookiemonster2()
 function cookiemonster3() {
