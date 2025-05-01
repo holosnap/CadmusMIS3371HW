@@ -378,7 +378,7 @@ function cookiemonster1() {
     let namevalue = document.getElementById('fname').value;
     const date = new Date();
     date.setTime(date.getTime() + (2 * 24 * 60 * 60 * 1000));
-    const expires = "expires=" + date.toUTCString();
+    const expires = "expires=" + date.toString();
     document.cookie = "username=" + encodeURIComponent(namevalue) + "; " + expires + "; path=/; SameSite=Lax";
     window.alert(document.cookie);
 }
