@@ -391,8 +391,8 @@ function cookiemonster2() {
 }
 const cookiename = cookiemonster2()
 function cookiemonster3() {
-    if (cookiename !== "") {
-        document.getElementById('fname').value = cookiename;
+    if (cookiemonster2() !== "") {
+        document.getElementById('fname').value = cookiemonster2();
 
     }
 
@@ -400,13 +400,13 @@ function cookiemonster3() {
 
 function cookiemonster4() {
 
-    if (cookiename == "") {
+    if (cookiemonster2() == "") {
             document.getElementById('cookiecheck').innerHTML = "Welcome new user";
     }
         
 
     else {
-    document.getElementById('cookiecheck').innerHTML = "Welcome back " + cookiename;
+    document.getElementById('cookiecheck').innerHTML = "Welcome back " + coocookiemonster2();
     document.getElementById("undo-cookie").style.display = "block"
 }
 }
