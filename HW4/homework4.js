@@ -383,8 +383,8 @@ function cookiemonster1() {
     window.alert(document.cookie);
 }
 
-function cookiemonster2() {;
-    var reggie = /username=([^;]*);/
+function cookiemonster2() {
+    var reggie = /username=([^;]*);/;
     
     return document.cookie.match(reggie);
 }
@@ -399,7 +399,7 @@ function cookiemonster3() {
 
 function cookiemonster4() {
 
-    if (cookiename == null) {
+    if (cookiename == "") {
             document.getElementById('cookiecheck').innerHTML = "Welcome new user";
     }
         
