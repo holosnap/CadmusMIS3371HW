@@ -399,7 +399,7 @@ function cookiemonster3() {
 
 function cookiemonster4() {
 
-    if (cookiename == "") {
+    if (!cookiename) {
             document.getElementById('cookiecheck').innerHTML = "Welcome new user";
     }
         
