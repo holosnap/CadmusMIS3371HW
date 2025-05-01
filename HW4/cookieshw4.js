@@ -14,6 +14,7 @@ function cookiemonster2() {
     return opreggie[1];
 }
 const cookiename = cookiemonster2()
+window.alert(cookiemonster2())
 function cookiemonster3() {
     if (cookiemonster2() !== "") {
         document.getElementById('fname').value = cookiemonster2();
