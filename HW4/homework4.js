@@ -382,3 +382,35 @@ function cookiemonster1() {
     document.cookie = "username=" + encodeURIComponent(namevalue) + "; " + expires + "; path=/; SameSite=Lax";
     window.alert(document.cookie);
 }
+
+function cookiemonster2() {
+    var cookieName = "username=";
+    var cookies = document.cookie.split(';');
+
+    for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i].trim();
+        if (cookie.indexOf(cookieName) == 0) {
+            return cookie.substring(cookieName.length, cookie.length);
+        }
+    }
+    return "";
+}
+const cookiename = cookiemonster2
+function cookiemonster3() {
+    if (cookiename !== "") {
+        document.getElementById('fname').value = cookiename;
+
+    }
+
+}
+
+function cookiemonster4() {
+
+    if (cookiename !== ""){
+        document.getElementById('cookiecheck').innerHTML = "Welcome back " + cookiename;
+        document.getElementById("undo-cookie").style.display = "block"
+    }
+    else {
+        document.getElementById('cookiecheck').innerHTML = "Welcome new user";
+    }
+}
