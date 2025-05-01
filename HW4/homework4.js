@@ -402,12 +402,12 @@ function cookiemonster4() {
 
     if (cookiemonster2() == "") {
             document.getElementById('cookiecheck').innerHTML = "Welcome new user";
-            document.getElementById("undo-cookie").style.display = "none"
+            document.getElementById("undo-cookie").style.display = "none";
     }
         
 
     else {
     document.getElementById('cookiecheck').innerHTML = "Welcome back " + cookiemonster2();
-    document.getElementById("undo-cookie").style.display = "block"
+    document.getElementById("undo-cookie").style.display = "block";
 }
 }
