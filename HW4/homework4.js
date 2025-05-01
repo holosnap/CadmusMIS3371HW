@@ -406,11 +406,13 @@ function cookiemonster3() {
 
 function cookiemonster4() {
 
-    if (cookiename !== ""){
-        document.getElementById('cookiecheck').innerHTML = "Welcome back " + cookiename;
-        document.getElementById("undo-cookie").style.display = "block"
+    if (cookiename == null) {
+            document.getElementById('cookiecheck').innerHTML = "Welcome new user";
     }
+        
+
     else {
-        document.getElementById('cookiecheck').innerHTML = "Welcome new user";
-    }
+    document.getElementById('cookiecheck').innerHTML = "Welcome back " + cookiename;
+    document.getElementById("undo-cookie").style.display = "block"
+}
 }
