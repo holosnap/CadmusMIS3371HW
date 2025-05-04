@@ -41,6 +41,6 @@ function cookiemonster4() {
 
 function cookiemonster5() {
 
-    document.cookie = "unername=";
+    document.cookie = "expires=0";
     window.alert(document.cookie);
 }
