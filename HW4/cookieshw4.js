@@ -39,7 +39,7 @@ function cookiemonster4() {
 }
 }
 
-function cookiemonster3() {
+function cookiemonster5() {
 
     document.cookie = null
     window.alert(document.cookie)
