@@ -12,8 +12,8 @@ function cookiemonster2() {
     var opreggie = decodeURIComponent(document.cookie).match(reggie);
     return opreggie[1];
 }
-const cookiename = cookiemonster2()
-window.alert(cookiename)
+const cookiename = cookiemonster2();
+window.alert(cookiename);
 function cookiemonster3() {
     if (cookiemonster2() !== "") {
         document.getElementById('fname').value = cookiemonster2();
