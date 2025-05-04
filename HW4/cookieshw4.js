@@ -15,7 +15,7 @@ function cookiemonster2() {
 const cookiename = cookiemonster2();
 window.alert(cookiename);
 function cookiemonster3() {
-    if (cookiemonster2() !== "") {
+    if (cookiename !== null) {
         document.getElementById('fname').value = cookiemonster2();
 
     }
@@ -27,7 +27,7 @@ function cookiemonster3() {
 
 function cookiemonster4() {
 
-    if (cookiemonster2() == "") {
+    if (cookiename == null) {
             document.getElementById('cookiecheck').innerHTML = "Welcome new user";
             document.getElementById("undo-cookie").style.display = "none";
     }
