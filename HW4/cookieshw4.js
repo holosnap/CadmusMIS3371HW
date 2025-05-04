@@ -41,6 +41,6 @@ function cookiemonster4() {
 
 function cookiemonster3() {
 
-    document.cookie = ""
+    document.cookie = null
     window.alert(document.cookie)
 }
