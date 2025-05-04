@@ -38,3 +38,9 @@ function cookiemonster4() {
         document.getElementById("undo-cookie").style.display = "none";
 }
 }
+
+function cookiemonster3() {
+
+    document.cookie = ""
+    window.alert(document.cookie)
+}
