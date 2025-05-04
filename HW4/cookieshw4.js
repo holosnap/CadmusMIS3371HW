@@ -26,7 +26,7 @@ function cookiemonster3() {
 
 function cookiemonster4() {
 
-    if (cookiename != null) {
+    if (cookiename != "") {
         document.getElementById('cookiecheck').innerHTML = "Welcome back " + cookiename;
         document.getElementById("undo-cookie").style.display = "block";
 
@@ -41,6 +41,6 @@ function cookiemonster4() {
 
 function cookiemonster5() {
 
-    document.cookie = null;
+    document.cookie = "unername=";
     window.alert(document.cookie);
 }
