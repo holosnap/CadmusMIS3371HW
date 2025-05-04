@@ -16,7 +16,7 @@ const cookiename = cookiemonster2();
 window.alert(cookiename);
 function cookiemonster3() {
     if (cookiename !== null) {
-        document.getElementById('fname').value = cookiemonster2();
+        document.getElementById('fname').value = cookiename;
 
     }
     else {
@@ -27,14 +27,15 @@ function cookiemonster3() {
 
 function cookiemonster4() {
 
-    if (cookiename == null) {
-            document.getElementById('cookiecheck').innerHTML = "Welcome new user";
-            document.getElementById("undo-cookie").style.display = "none";
+    if (cookiename !== null) {
+        document.getElementById('cookiecheck').innerHTML = "Welcome back " + cookiename;
+        document.getElementById("undo-cookie").style.display = "block";
+
     }
         
 
     else {
-    document.getElementById('cookiecheck').innerHTML = "Welcome back " + cookiemonster2();
-    document.getElementById("undo-cookie").style.display = "block";
+        document.getElementById('cookiecheck').innerHTML = "Welcome new user";
+        document.getElementById("undo-cookie").style.display = "none";
 }
 }
