@@ -41,6 +41,6 @@ function cookiemonster4() {
 
 function cookiemonster5() {
 
-    document.cookie = "expires=0";
+    document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     window.alert(document.cookie);
 }
