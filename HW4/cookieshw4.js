@@ -12,7 +12,6 @@ function cookiemonster2() {
     return opreggie[1];
 }
 const cookiename = cookiemonster2();
-window.alert(cookiename);
 function cookiemonster3() {
     if (cookiename !== null) {
         document.getElementById('fname').value = cookiename;
@@ -42,5 +41,4 @@ function cookiemonster4() {
 function cookiemonster5() {
 
     document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-    window.alert(document.cookie);
 }
