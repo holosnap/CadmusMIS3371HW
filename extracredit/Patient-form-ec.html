@@ -22,10 +22,17 @@ Processing Course at the University of Houston.
           </script>
     
     </head>
-<body onload="cookiemonster4(); cookiemonster3();">
+<body onload="cookiemonster4(); cookiemonster3(); showNextSlide();">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
     <div id="header">
     <ul>
-        
+        <span onclick="openNav()" id="menuopener">...</span>
         <H1>Houston Medical Services</H1>
         <div id="medicalstyle">
         <img src="medicalsymbolec.jpg" style="height: 100px; width: 100px; float: left; padding-top:20px;">
@@ -39,8 +46,16 @@ Processing Course at the University of Houston.
 
     </ul>
     </div>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <img class="slide" src="img1.png" alt="Slide 1">
+        <img class="slide" src="img2.png" alt="Slide 2" hidden="hidden">
+        <img class="slide" src="img3.png" alt="Slide 3" hidden="hidden">
+      </div>
+  <br>
+  
+  </div>
     <!-- Begin form that I forgot to write as a table until I was far too invested and tired to redo. -->
-    <iframe src="iframe.html" style="float: right;margin-top: 30%;margin-right:10%;"></iframe>
     <form id="formstyle">
             <div id="patientinfo">
             <ul>
@@ -252,13 +267,17 @@ Processing Course at the University of Houston.
                 <ul>
                     <label>enter password:</label>
                     <input type="password" name="passwordforapp" id="pword"onblur="validatePword()" oninput="validatePword()" onfocus="validatePword()">
+                    <span id="confirmmark"></span>
                     <br>
                     <span class="error" id="pwd-error"></span>
                 </ul>
                 <ul>
                     <label>please re-enter password:</label>
                     <input type="password" name="passwordforapp2" id="con_pword" onblur="confirmPword()" oninput="confirmPword()" onfocus="confirmPword()">
+                    <span id="confirmmark2"></span>
+                    <br>
                     <span class="error" id="pword2-error"></span>
+                    <span id="capswarning"></span>
                 </ul>
                 <br>
                 <ul>

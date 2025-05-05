@@ -206,34 +206,40 @@ function validatePword() {
 
         document.getElementById('pwd-error').innerHTML =
         "Enter at least one lowercase letter for user password";
+        document.getElementById("confirmmark").innerHTML = "x";
         return false;
     }
     if (!pword.match(/[A-Z]/)) {
 
         document.getElementById("pwd-error").innerHTML = 
         "Ener at least one uppercase letter for password";
+        document.getElementById("confirmmark").innerHTML = "x";
         return false;
     }
     if (!pword.match(/[0-9]/)) {
         
         document.getElementById("pwd-error").innerHTML = 
         "enter at least one number for password";
+        document.getElementById("confirmmark").innerHTML = "x";
         return false;
     }
     if ((!pword.match(/[!\@#\$%&*\-_\\.+\(\)]/))) {
 
         document.getElementById("pwd-error").innerHTML = 
         "enter at least one special character";
+        document.getElementById("confirmmark").innerHTML = "x";
         return false;
 
     }
     if (pword.includes(uid)) {
         document.getElementById("pwd-error").innerHTML =
         "Password can't contain user ID";
+        document.getElementById("confirmmark").innerHTML = "x";
         return false
     }
     else {
         document.getElementById('pwd-error').innerHTML = ""
+        document.getElementById("confirmmark").innerHTML = '\u2714';
         return true
     }
 }
@@ -245,10 +251,12 @@ function confirmPword() {
     if (pword1 !== pword2) {
         document.getElementById("pword2-error").innerHTML = 
         "Passwords don't match";
+        document.getElementById("confirmmark2").innerHTML = "x";
         return false;
     } else {
         document.getElementById("pword2-error").innerHTML = 
         "";
+        document.getElementById("confirmmark2").innerHTML = '\u2714';
         return true;
     }
 }
@@ -373,3 +381,23 @@ function validateMini() {
         return true;
     }
 }
+/* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  
+  const slides = document.getElementsByClassName('slide');
+  let currentSlide = 0;
+
+  function showNextSlide() {
+    slides[currentSlide].setAttribute('hidden', 'hidden');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].removeAttribute('hidden');
+  }
+
+  setInterval(showNextSlide, 3000);
